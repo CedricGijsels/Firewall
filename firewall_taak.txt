@@ -12,3 +12,4 @@
 -A OUTPUT -p udp -m udp --dport 53 -m state --state NEW -j ACCEPT
 -A OUTPUT -o lo -j ACCEPT
 -A OUTPUT -p icmp -m icmp --icmp-type 0 -j ACCEPT
+#Zone transfers blocked door "allow-transfer {"none";};" toe te voegen aan /etc/bind/named.conf.options (zie screenshot)
